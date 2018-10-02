@@ -46,7 +46,7 @@ client.on('ready', () => {
 });
 
    client.on("message", message => {
- if(message.content.startsWith(prefix + "startrainbow")) {
+ if(message.content.startsWith(prefix + "set")) {
    let rainbow = message.guild.roles.find(`name`, "Rainbow");
   //start of create role
   if(!rainbow){
