@@ -2,6 +2,17 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+   client.on("message", message => {
+ if(message.content.startsWith(prefix + "set")) {
+   let rainbow = message.guild.roles.find(`name`, "Rainbow");
+  //start of create role
+  if(!rainbow){
+         rainbow =  message.guild.createRole({
+        name: "Rainbow",
+        color: "#000000",
+        permissions:[]
+      })
+}}})
 const size    = config.colors;
 const rainbow = new Array(size);
 console.log(`hello rainbow`)
@@ -46,16 +57,6 @@ client.on('ready', () => {
   setInterval(changeColor, config.speed);
 });
 
-   client.on("message", message => {
- if(message.content.startsWith(prefix + "set")) {
-   let rainbow = message.guild.roles.find(`name`, "Rainbow");
-  //start of create role
-  if(!rainbow){
-         rainbow =  message.guild.createRole({
-        name: "Rainbow",
-        color: "#000000",
-        permissions:[]
-      })
-}}})
+
 
 client.login(process.env.BOT_TOKEN);
