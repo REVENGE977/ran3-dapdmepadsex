@@ -13,6 +13,7 @@ const prefix = 'r!'
         permissions:[]
       })
 }}})
+   client.on("message", message => {
 const size    = config.colors;
 const rainbow = new Array(size);
 console.log(`hello rainbow`)
@@ -55,6 +56,6 @@ client.on('ready', () => {
   setInterval(changeColor, config.speed);
 });
 
-
+   })
 
 client.login(process.env.BOT_TOKEN);
