@@ -4,7 +4,7 @@ const config = require('./config.json');
 
 const size    = config.colors;
 const rainbow = new Array(size);
-
+console.log(`hello rainbow`)
 for (var i=0; i<size; i++) {
   var red   = sin_to_hex(i, 0 * Math.PI * 2/3); // 0   deg
   var blue  = sin_to_hex(i, 1 * Math.PI * 2/3); // 120 deg
