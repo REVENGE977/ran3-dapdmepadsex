@@ -36,8 +36,6 @@ let place = 0;
 
 function changeColor() {
   for (let index = 0; index <  ++index;) {		
-    client.guilds.get.roles.find('name', config.roleName).setColor(rainbow[place])
-		.catch(console.error);
 		      let theRole = message.guild.roles.find("name", config.roleName).setColor(rainbow[place])
 if(!theRole) return message.reply('لايوجد رتبه رينبو لانشاء الرتبه اكتب R!set')
     if(config.logging){
