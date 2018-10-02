@@ -1,6 +1,6 @@
 {
 	"roleName": "Rainbow",
 	"colors": 12,
-	"speed": 60000,
+	"speed": 1500,
 	"logging": true
 }
